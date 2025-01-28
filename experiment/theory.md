@@ -23,16 +23,19 @@ Metal-semiconductor junctions can be categorized based on their electrical behav
 
 - **Important Formulas**:
   - **Contact Resistance (Rc)**: The contact resistance can be expressed as:
-    \[
-    R_c = \frac{1}{q \cdot n \cdot A}
-    \]
+    $$ R_c = \frac{1}{q \cdot n \cdot A} $$
     where \( q \) is the charge of an electron, \( n \) is the carrier concentration, and \( A \) is the contact area. A lower contact resistance is desirable for efficient device operation, as it minimizes power loss and heat generation.
   - **Current Density (J)**: The current density through the junction can be described by:
-    \[
-    J = q \cdot n \cdot \mu \cdot E
-    \]
+    $$ J = q \cdot n \cdot \mu \cdot E $$
     where \( \mu \) is the mobility of the charge carriers and \( E \) is the electric field. This equation highlights the dependence of current flow on both the concentration of charge carriers and their ability to move in response to an electric field.
 
 - **Additional Considerations**: 
   - **Temperature Effects**: The performance of ohmic contacts can be influenced by temperature. As temperature increases, carrier concentration and mobility can change, affecting the contact resistance.
   - **Material Selection**: The choice of metal for forming ohmic contacts is crucial. Metals with a work function close to the semiconductor's electron affinity are preferred, as they facilitate better charge carrier injection.
+
+### Advanced Concepts
+- **Schottky Barriers**: In contrast to ohmic contacts, Schottky barriers are formed when a metal with a high work function contacts a semiconductor. This creates a potential barrier that can control the flow of charge carriers, leading to rectifying behavior. Understanding the formation and characteristics of Schottky barriers is essential for designing diodes and transistors.
+
+- **Heterojunctions**: Semiconductor heterojunctions involve the interface between two different semiconductor materials, which can have varying band gaps. This allows for the engineering of electronic and optical properties, enabling applications in high-efficiency solar cells, light-emitting diodes (LEDs), and laser diodes. The band alignment at the heterojunction plays a critical role in determining the charge carrier dynamics and overall device performance.
+
+- **Applications in Modern Technology**: Metal-semiconductor and semiconductor heterojunctions are foundational in the development of various electronic devices, including transistors, diodes, and photovoltaic cells. Their ability to manipulate charge carrier behavior is crucial for enhancing device efficiency and performance in applications ranging from consumer electronics to renewable energy technologies.
