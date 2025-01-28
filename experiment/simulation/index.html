@@ -1,13 +1,92 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-		<!-- Your code goes here-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PN Junction Matching Exercise</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <style>
+      /* New styles for responsive images */
+      .questions img, .answers img {
+        max-width: 100%; /* Make images responsive */
+        height: auto; /* Maintain aspect ratio */
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center items */
+      }
+      .question, .answer {
+        flex: 1 1 45%; /* Allow items to grow and shrink */
+        margin: 10px; /* Add some spacing */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+    </div>
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
+
+    <div class="content">
+      <h2></h2>
+      <p>
+        match the thermal equilibrium band diagram to respective charge distribution. 
+      </p>
+	  
+      <div class="container">
+		<p>band diagrams</p>
+        <div class="questions">
+          <div class="question" data-id="1">
+            <img src="./images/question1.png" alt="question1" />
+          </div>
+          <div class="question" data-id="2">
+            <img src="./images/question2.png" alt="Depletion Region" />
+          </div>
+          <div class="question" data-id="3">
+            <img src="./images/question3.png" alt="Forward Bias" />
+          </div>
+          <div class="question" data-id="4">
+            <img src="./images/question4.png" alt="Reverse Bias" />
+          </div>
+        </div>
+<p> charge distribution</p>
+        <div class="answers">
+          <div class="answer" data-id="5">
+            <p>none are matching</p>
+          </div>
+          <div class="answer" data-id="2">
+            <img src="./images/answer2.png" alt="Region near the junction depleted of mobile carriers" />
+          </div>
+          <!-- <div class="answer" data-id="6">
+            <img src="./images/answer6.png" alt="" />
+          </div> -->
+          <div class="answer" data-id="3">
+            <img src="./images/answer3.png" alt="Positive voltage to P-side reduces barrier, allows current flow" />
+          </div>
+          <div class="answer" data-id="1">
+            <img src="./images/answer1.png" alt="Potential difference that develops across the junction in equilibrium" />
+          </div>
+          <div class="answer" data-id="4">
+            <img src="./images/answer4.png" alt="Negative voltage to P-side increases depletion width" />
+          </div>
+          <!-- <div class="answer" data-id="7">
+            <img src="./images/answer7.png" alt="Measure of how easily current flows through material" />
+          </div>
+          <div class="answer" data-id="8">
+            <img src="./images/answer8.png" alt="Region where electrons and holes recombine" />
+          </div> -->
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button id="checkBtn">Check Answers</button>
+        <button id="resetBtn">Reset Exercise</button>
+      </div>
+      <div id="score"></div>
+
+      <canvas id="drawCanvas"></canvas>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
 </html>
