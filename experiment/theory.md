@@ -21,13 +21,38 @@ Metal-semiconductor junctions can be categorized based on their electrical behav
 
 - **Example**: An example of an ohmic contact is the interface between heavily doped n-type silicon and metals like aluminum, which ensures low resistance. In this case, the high doping level in the silicon provides an abundance of free electrons, while aluminum, being a good conductor, facilitates easy electron flow. This combination results in a junction that behaves like a simple resistor.
 
-- **Important Formulas**:
-  - **Contact Resistance (Rc)**: The contact resistance can be expressed as:
-    $$ R_c = \frac{1}{q \cdot n \cdot A} $$
-    where \( q \) is the charge of an electron, \( n \) is the carrier concentration, and \( A \) is the contact area. A lower contact resistance is desirable for efficient device operation, as it minimizes power loss and heat generation.
-  - **Current Density (J)**: The current density through the junction can be described by:
-    $$ J = q \cdot n \cdot \mu \cdot E $$
-    where \( \mu \) is the mobility of the charge carriers and \( E \) is the electric field. This equation highlights the dependence of current flow on both the concentration of charge carriers and their ability to move in response to an electric field.
+## Important Formulas
+
+### Contact Resistance ($R_c$):
+The contact resistance is expressed as:
+
+```math
+R_c = \frac{1}{q \cdot n \cdot A}
+```
+
+where:
+- $q$: Charge of an electron  
+- $n$: Carrier concentration  
+- $A$: Contact area  
+
+A lower contact resistance is desirable for efficient device operation, as it minimizes power loss and heat generation.
+
+---
+
+### Current Density ($J$):
+The current density through the junction is given by:
+
+```math
+J = q \cdot n \cdot \mu \cdot E
+```
+
+where:
+- $q$: Charge of an electron  
+- $n$: Carrier concentration  
+- $\mu$: Mobility of charge carriers  
+- $E$: Electric field  
+
+This equation highlights the dependence of current flow on both the concentration of charge carriers and their ability to move in response to an electric field.
 
 - **Additional Considerations**: 
   - **Temperature Effects**: The performance of ohmic contacts can be influenced by temperature. As temperature increases, carrier concentration and mobility can change, affecting the contact resistance.
